@@ -7,7 +7,9 @@ Welp-- PinoyFlix, in a nutshell, is a subscription-based Pinoy Movie and TV Show
 ## Tech Stack
 
 Front-End: `ReactJS`, `Redux`, and `Redux Toolkit`
+
 Back-End: `Firebase`
+
 APIs: `TMDB`
 
 In this project, [TMDB API](https://www.themoviedb.org/) was used to call Filipino TV shows and movies using middleware `axios`. Google Authentication was also integrated into the project.
