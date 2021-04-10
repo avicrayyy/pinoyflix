@@ -8,3 +8,10 @@
     overflow-y: auto;
     width: 100%;
 }
+
+footer {
+    text-align: center;
+    margin: 20px;
+    color: #555;
+    font-size: 12px;
+}

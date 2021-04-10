@@ -57,7 +57,7 @@ function Banner() {
             </button>
             <button className="list-button">
               <AiOutlineInfoCircle />
-              Add to List
+              More Info
             </button>
           </div>
         </div>

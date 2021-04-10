@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 import Nav from "../../components/Nav";
@@ -15,8 +16,18 @@ function HomeScreen() {
       <Nav />
       <div className="content">
         <Banner />
-        <Suggestions title="Movies" fetchUrl={requests.fetchPinoyMovies} />
+        <Suggestions
+          title="Movies"
+          fetchUrl={requests.fetchPinoyMovies}
+          isLargeRow={true}
+        />
         <Suggestions title="TV Shows" fetchUrl={requests.fetchPinoyTV} />
+        <footer>
+          &copy; 2021 Project by{" "}
+          <a href="https://daviddomingo.netlify.app/" target="_blank">
+            David Domingo
+          </a>
+        </footer>
       </div>
     </div>
   );
