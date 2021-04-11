@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   AiOutlineHome,
+  AiFillFire,
   AiFillHome,
   AiOutlineFire,
-  AiOutlineUnorderedList,
+  AiFillStar,
+  AiOutlineStar,
 } from "react-icons/ai";
-import { FiMonitor } from "react-icons/fi";
-import { RiMovie2Line } from "react-icons/ri";
+import {
+  RiMovie2Line,
+  RiMovie2Fill,
+  RiSlideshow3Fill,
+  RiSlideshow3Line,
+} from "react-icons/ri";
 
 import "./styles.css";
 
 function Nav() {
+  const [active, setActive] = useState("Home");
+
+  useEffect(() => {}, []);
+
   return (
     <div className="nav">
       <div className="nav-left">
@@ -22,35 +32,53 @@ function Nav() {
           />
         </div>
         <div className="nav-items">
-          <div className="nav-link">
-            <h1>
-              <AiFillHome />
-              {/* <AiOutlineHome /> */}
-            </h1>
+          <div
+            className="nav-link"
+            onClick={() => {
+              setActive("Home");
+            }}
+          >
+            <h1>{active === "Home" ? <AiFillHome /> : <AiOutlineHome />}</h1>
             Home
           </div>
-          <div className="nav-link">
+          <div
+            className="nav-link"
+            onClick={() => {
+              setActive("TV");
+            }}
+          >
             <h1>
-              <FiMonitor />
+              <h4>
+                {active === "TV" ? <RiSlideshow3Fill /> : <RiSlideshow3Line />}
+              </h4>
             </h1>
             TV Shows
           </div>
-          <div className="nav-link">
-            <h1>
-              <RiMovie2Line />
-            </h1>
+          <div
+            className="nav-link"
+            onClick={() => {
+              setActive("Movies");
+            }}
+          >
+            <h1>{active === "Movies" ? <RiMovie2Fill /> : <RiMovie2Line />}</h1>
             Movies
           </div>
-          <div className="nav-link">
-            <h1>
-              <AiOutlineFire />
-            </h1>
+          <div
+            className="nav-link"
+            onClick={() => {
+              setActive("Popular");
+            }}
+          >
+            <h1>{active === "Popular" ? <AiFillFire /> : <AiOutlineFire />}</h1>
             New &amp; Popular
           </div>
-          <div className="nav-link">
-            <h1>
-              <AiOutlineUnorderedList />
-            </h1>
+          <div
+            className="nav-link"
+            onClick={() => {
+              setActive("List");
+            }}
+          >
+            <h1>{active === "List" ? <AiFillStar /> : <AiOutlineStar />}</h1>
             My List
           </div>
         </div>

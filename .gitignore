@@ -24,3 +24,9 @@ yarn-error.log*
 
 # API Key
 /src/adapters
+
+# Firebase
+.firebase/
+.firebaserc
+firebase.json
+firebase.js

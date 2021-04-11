@@ -5,13 +5,19 @@
     margin-top: 12px;
 }
 
-.movie-posters::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
 }
 
 .movie-posters img {
     margin-right: 12px;
     margin-bottom: 12px;
+    transition: transform 300ms;
+}
+
+.movie-posters img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .suggestions {

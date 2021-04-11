@@ -2,7 +2,7 @@
 .nav {
     height: 100vh;
     background-color: #fff;
-    color: #000;
+    color: rgba(0, 0, 0, 0.8);
     width: 70px;
     display: flex;
     flex-direction: column;
@@ -21,4 +21,9 @@
     margin: 20px 0; 
     font-size: 11px;
     text-align: center;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #000;
 }

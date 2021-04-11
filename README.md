@@ -4,6 +4,8 @@
 
 Welp-- PinoyFlix, in a nutshell, is a subscription-based Pinoy Movie and TV Show streaming site (how I envision it) where people can watch their favorite Filipino films, TV shows from their PC or mobile browser. Don't even miss your fave tele-dramas with PinoyFlix lmao
 
+See project: [PinoyFlix](https://pinoyflix-build.web.app)
+
 ## Tech Stack
 
 Front-End: `ReactJS`, `Redux`, and `Redux Toolkit`
