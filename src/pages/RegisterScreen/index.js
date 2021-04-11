@@ -4,20 +4,36 @@ import "./styles.css";
 
 function RegisterScreen() {
   return (
-    <div>
-      register
-      <input type="text" placeholder="First Name" />
-      <input type="text" placeholder="Last Name" />
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <input type="password" placeholder="Confirm Password" />
-      <input type="checkbox" />
-      <p>I have read and I agree to the Terms and Services</p>
-      <button>Submit</button>
-      <p>
-        Already a user? <Link to="/login">Login</Link>
-      </p>
-    </div>
+    <>
+      <div className="register">
+        <div className="register-box">
+          <h2>register</h2>
+          <div className="input-field">
+            <input type="text" placeholder="First Name" />
+          </div>
+          <div className="input-field">
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div className="input-field">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div className="input-field">
+            <input type="password" placeholder="Password" />
+          </div>
+          <div className="input-field">
+            <input type="password" placeholder="Confirm Password" />
+          </div>
+          <div className="input-field">
+            <input type="checkbox" />
+            <p>I have read and I agree to the Terms and Services</p>
+          </div>
+          <button className="btn">Submit</button>
+          <p>
+            Already a user? <Link to="/login">Login</Link>
+          </p>
+        </div>
+      </div>
+    </>
   );
 }
 

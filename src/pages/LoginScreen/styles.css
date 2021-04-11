@@ -1,0 +1,33 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    width: 200px;
+    color: #000;
+}
+
+.input-field {
+    margin-bottom: 12px;
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn-google-auth {
+    background-color: #3879f1;
+}
+
+.btn-fb-auth {
+    background-color: #3953a4;
+}
